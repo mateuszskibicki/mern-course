@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-
 // Create Schema
 const ProfileSchema = new Schema({
   user: {
@@ -27,7 +26,7 @@ const ProfileSchema = new Schema({
     required: true
   },
   skills: {
-    type: [String], //array of strings
+    type: [String],
     required: true
   },
   bio: {
@@ -36,8 +35,7 @@ const ProfileSchema = new Schema({
   githubusername: {
     type: String
   },
-
-  experience: [ //array of objects
+  experience: [
     {
       title: {
         type: String,
@@ -66,8 +64,7 @@ const ProfileSchema = new Schema({
       }
     }
   ],
-
-  education: [ //array of objects
+  education: [
     {
       school: {
         type: String,
@@ -97,7 +94,6 @@ const ProfileSchema = new Schema({
       }
     }
   ],
-
   social: {
     youtube: {
       type: String
@@ -115,7 +111,6 @@ const ProfileSchema = new Schema({
       type: String
     }
   },
-
   date: {
     type: Date,
     default: Date.now
