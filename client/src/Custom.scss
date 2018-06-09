@@ -1,7 +1,6 @@
 body {
   background-color: whitesmoke;
-  display: none;
   .dashboard {
-    background-color: darken(whitesmoke, 10%);
+    border: 2px solid rgba(0, 0, 0, .2);
   }
 }
